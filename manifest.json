@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "UMN GitHub Notifier Banner",
+  "version": "1.0.1",
+  "description": "Warn when viewing legacy github.umn.edu/asrweb/* and offer a 1-click jump to github.com/umn-asr/*",
+  "permissions": [],
+  "content_scripts": [
+    {
+      "matches": ["https://github.umn.edu/asrweb/*"],
+      "js": ["umn_github_notifier_banner.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
